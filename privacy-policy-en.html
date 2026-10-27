@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pre Flight — Privacy Policy</title>
+<title>Brain Preflight — Privacy Policy</title>
 <style>
   body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; max-width:720px;
     margin:0 auto; padding:32px 20px 60px; color:#1E2347; line-height:1.6; background:#F7F8FC}
@@ -12,39 +12,57 @@
 </style>
 </head>
 <body>
-<h1>Privacy Policy — Pre Flight</h1>
-<p class="meta">Last updated: July 22, 2026 · Publisher: Amine Kara · Contact: aminekara01@gmail.com ·
+<h1>Privacy Policy — Brain Preflight</h1>
+<p class="meta">Last updated: 27 October 2026 · Publisher: Amine Kara · Contact: brainpreflight@gmail.com ·
 <a href="privacy-policy.html">Version française</a></p>
 
-<p><b>Pre Flight</b> is a training app for cadet-pilot selection aptitude tests. It is designed
-to work <b>offline</b> and to collect as little data as possible.</p>
+<p><b>Brain Preflight</b> (formerly Pre Flight) is a training app for selection aptitude tests
+(pilots, air traffic controllers, police, military…). It works <b>offline</b> and collects as
+little data as possible. The app does not ask for your name, e-mail, contacts or precise GPS location. Advertising providers may infer an approximate location from your IP address (section 3).</p>
 
-<h2>1. Data stored on your device (never transmitted)</h2>
-<p>Your progress (scores, levels, XP, daily streak, sound settings, Premium status) is saved
-<b>locally on your device</b> only. We have no access to it. Deleting the app deletes this
-data.</p>
+<h2>1. Data stored on your device</h2>
+<p>Your progress (scores, levels, XP, daily streak, settings, chosen program, test date, Premium
+status) is saved <b>locally on your device</b>. Deleting the app deletes this data.</p>
 
-<h2>2. Anonymous scores and usage events (ranking, usage measurement) — if enabled</h2>
-<p>To display the "you beat X% of candidates" percentile, the app may send to our database
-(Supabase): a random device identifier (UUID, not linked to your identity), the game played,
-the score and the level. The app may also send <b>anonymous usage events</b> tied to the same
-random identifier (e.g. app open, session start and end, subscription screen view, target
-selection choice), used solely to understand what is useful and improve the app. No personal
-data (name, e-mail, location) is collected.</p>
+<h2>2. Pseudonymous usage statistics</h2>
+<p>To understand what actually helps candidates and to improve the app, the app sends <b>usage
+events</b> to our database (Supabase, servers in the <b>European Union</b>, Ireland), tied to a
+<b>random identifier created by the app</b>. This identifier lets us associate activity from the same app installation. We do not connect it to your name, Apple account, RevenueCat identifier or advertising identifier.
+Usage analytics are enabled in version 1.7.1. These events contain:</p>
+<ul>
+  <li><b>Technical context</b>: an app-launch identifier, the order and time of events, the app
+    version, the app language, your iPhone's language (e.g. "en-US") and time zone (e.g. "America/New_York") —
+    these settings can give a broad indication of region, but are <b>not GPS location</b> —, whether you are Premium, and ad displays (type, duration).</li>
+  <li><b>Your preparation</b>: the program you chose (e.g. "US Air Force — AFOQT") and the test
+    date you entered, with the number of days left.</li>
+  <li><b>Your usage</b>: tests started, finished or quit, their duration and the level reached,
+    mock exams, screens viewed, the app going to the background and coming back (screen and test
+    in progress at that moment).</li>
+  <li><b>Searches</b> typed in the program picker (40 characters max; a search that looks like an
+    e-mail address is not sent). Don't type personal information there.</li>
+  <li><b>The subscription screen</b>: when it is shown, what you do there (close, watch a video,
+    try a purchase) and the outcome of a purchase (successful or not, plan chosen). No payment
+    information: that stays with Apple.</li>
+  <li><b>Scores</b>: to compute the "you beat X% of candidates" percentile, the game played, the
+    score and the level.</li>
+</ul>
+<p>This data is used <b>only</b> to measure usage, improve the app and provide score percentiles. It is <b>not sold, not
+shared</b> with advertisers, not used to track you across other apps or websites, and not
+combined with advertising data (section 3). Events are first kept on your device, then sent in
+batches when you are not actively playing, including when the app goes to the background.</p>
 
 <h2>3. Advertising (free version)</h2>
 <p>The free version may display ads through <b>Google AdMob</b>. On iOS, ad personalization is
-only enabled if you accept it through Apple's consent prompt (App Tracking Transparency). If you
-decline, <b>non-personalized</b> ads are shown. Google may collect device identifiers and usage
-data to serve ads — see the
-<a href="https://policies.google.com/privacy">Google Privacy Policy</a>.
+subject to the applicable Google consent choices and Apple's App Tracking Transparency permission. Refusing tracking prevents access to the advertising identifier; non-personalized or limited ads may still be shown, depending on your choices and availability. Google may collect IP addresses (including approximate location inferred from them), device identifiers, ad impressions and interactions, crash logs, performance information and other diagnostics to provide, measure and improve advertising — see the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.
 The Premium subscription removes all ads.</p>
 
 <h2>4. In-app purchases</h2>
 <p>Premium subscriptions are processed by <b>Apple</b> (App Store) and our subscription
-management provider <b>RevenueCat</b>, which receives an anonymous purchase receipt to validate
-the subscription. We never see your payment details. See the
+management provider <b>RevenueCat</b>, which receives a purchase receipt to validate the
+subscription, along with transaction details and a randomly generated RevenueCat app-user identifier. We do not send your Supabase analytics identifier to RevenueCat. We never see your payment details. See the
 <a href="https://www.revenuecat.com/privacy">RevenueCat Privacy Policy</a>.</p>
+
+<p>Google and RevenueCat may process data outside the European Union, including in the United States. Their privacy policies explain their retention periods, international transfers and applicable safeguards. Network requests also expose your IP address to the service provider; our analytics event and score records do not store it as an analytics field.</p>
 
 <h2>5. Notifications</h2>
 <p>The daily reminder is a <b>local</b> notification, scheduled on your device; no data leaves
@@ -52,24 +70,22 @@ the device for this. You can turn it off in iOS Settings.</p>
 
 <h2>6. Legal basis, retention and your rights (GDPR)</h2>
 <p><b>Legal basis:</b> performance of the contract for the Premium subscription
-(Art. 6(1)(b) GDPR), your consent for personalized ads (Apple's ATT prompt), and our legitimate
-interest for the anonymous scores and events used for ranking and app improvement
-(Art. 6(1)(f)).</p>
+(Art. 6(1)(b) GDPR), your consent where required for advertising and tracking (Google consent choices and Apple's ATT permission), and our legitimate
+interest in measuring app usage to improve it and in computing the percentile (Art. 6(1)(f)).</p>
 <p><b>Retention:</b> local data stays on your device for as long as the app is installed.
-Anonymous scores and events are kept for a maximum of 24 months, then deleted or aggregated.</p>
-<p><b>Your rights:</b> local data is under your control (deleting the app erases it). Scores and
-events that are sent are tied to a random identifier that is not linked to your identity and is
-never displayed anywhere — so we cannot find "your" data or connect it to you. For any question
-or request (access, deletion), write to us at <b>aminekara01@gmail.com</b>. You may also lodge a
-complaint with your local data-protection authority (in France, the
+Detailed usage events are deleted after <b>60 days</b>; only aggregated statistics, which cannot
+be traced back to a device, are kept beyond that. Scores used for the percentile are kept for 90 days.</p>
+<p><b>Your rights:</b> you have the rights of access, rectification, erasure, objection and
+restriction. The analytics data is tied to a random app-installation identifier rather than your name. For any
+request, write to <b>brainpreflight@gmail.com</b> and we will tell you how we can handle it. You
+may also lodge a complaint with your local data-protection authority (in France, the
 <a href="https://www.cnil.fr">CNIL</a>).</p>
 
 <h2>7. Children</h2>
-<p>The app is aimed at cadet-pilot selection candidates (generally 16 and older) and does not
-knowingly collect data from children under 13.</p>
+<p>The app is aimed at selection candidates (generally 16 and older) and does not knowingly
+collect data from children under 13.</p>
 
 <h2>8. Changes</h2>
-<p>This policy may evolve with the app (e.g. if online rankings are added). The update date at
-the top of this page prevails.</p>
+<p>This policy may evolve with the app. The update date at the top of this page prevails.</p>
 </body>
 </html>
