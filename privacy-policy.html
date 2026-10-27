@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pre Flight — Politique de confidentialité</title>
+<title>Brain Preflight — Politique de confidentialité</title>
 <style>
   body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; max-width:720px;
     margin:0 auto; padding:32px 20px 60px; color:#1E2347; line-height:1.6; background:#F7F8FC}
@@ -12,42 +12,61 @@
 </style>
 </head>
 <body>
-<h1>Politique de confidentialité — Pre Flight</h1>
-<p class="meta">Dernière mise à jour : 22 juillet 2026 · Éditeur : Amine Kara · Contact : aminekara01@gmail.com ·
+<h1>Politique de confidentialité — Brain Preflight</h1>
+<p class="meta">Dernière mise à jour : 27 octobre 2026 · Éditeur : Amine Kara · Contact : brainpreflight@gmail.com ·
 <a href="privacy-policy-en.html">English version</a></p>
 
-<p><b>Pre Flight</b> est une application d'entraînement aux tests d'aptitude des sélections
-cadet-pilote. Elle est conçue pour fonctionner <b>hors-ligne</b> et collecter le moins de
-données possible.</p>
+<p><b>Brain Preflight</b> (anciennement Pre Flight) est une application d'entraînement aux tests
+d'aptitude des sélections (pilotes, contrôleurs aériens, police, gendarmerie, armées…). Elle
+fonctionne <b>hors-ligne</b> et collecte le moins de données possible. Elle ne te demande ni ton nom, ni ton e-mail, ni tes contacts, ni ta position GPS précise. Les prestataires publicitaires peuvent déduire une position approximative de ton adresse IP (section 3).</p>
 
-<h2>1. Données stockées sur ton appareil (jamais transmises)</h2>
-<p>Ta progression (scores, niveaux, XP, série quotidienne, réglages son, statut Premium) est
-enregistrée <b>localement sur ton appareil</b> uniquement. Nous n'y avons pas accès. Supprimer
+<h2>1. Données stockées sur ton appareil</h2>
+<p>Ta progression (scores, niveaux, XP, série quotidienne, réglages, programme choisi, date
+d'épreuve, statut Premium) est enregistrée <b>localement sur ton appareil</b>. Supprimer
 l'application supprime ces données.</p>
 
-<h2>2. Scores et événements anonymes (classement, mesure d'usage) — si activé</h2>
-<p>Pour afficher le percentile « tu bats X % des candidats », l'application peut envoyer à notre
-base (Supabase) : un identifiant d'appareil aléatoire (UUID, non relié à ton identité), le jeu
-joué, le score et le niveau. L'application peut aussi envoyer des <b>événements d'usage
-anonymes</b> rattachés au même identifiant aléatoire (par ex. ouverture de l'app, début et fin
-de session, affichage de l'écran d'abonnement, choix d'une sélection cible), utilisés uniquement
-pour comprendre ce qui est utile et améliorer l'application. Aucune donnée nominative (nom,
-e-mail, position) n'est collectée.</p>
+<h2>2. Statistiques d'usage pseudonymes</h2>
+<p>Pour comprendre ce qui aide vraiment les candidats et améliorer l'application, l'app envoie à
+notre base de données (Supabase, serveurs dans l'<b>Union européenne</b>, Irlande) des
+<b>événements d'usage</b> rattachés à un <b>identifiant aléatoire créé par l'app</b>. Cet
+identifiant permet de regrouper l'activité d'une même installation. Nous ne le relions ni à ton nom, ni à ton compte Apple, ni à ton identifiant RevenueCat, ni à ton identifiant publicitaire. Les statistiques sont actives dans la version 1.7.1. Ces événements contiennent :</p>
+<ul>
+  <li><b>Contexte technique</b> : un identifiant de lancement de l'app, l'ordre et l'heure des
+    événements, la version de l'app, la langue de l'app, la langue de ton iPhone (par ex. « fr-FR ») et
+    son fuseau horaire (par ex. « Europe/Paris ») — ces réglages peuvent donner une indication générale de la région, mais <b>pas une position GPS</b> —, si tu es Premium ou non,
+    et l'affichage des publicités (type, durée).</li>
+  <li><b>Ta préparation</b> : le programme que tu as choisi (par ex. « ENAC — EPL ») et la date
+    d'épreuve que tu as saisie, avec le nombre de jours restants.</li>
+  <li><b>Ton utilisation</b> : les épreuves lancées, terminées ou quittées, leur durée et le niveau
+    obtenu, les examens blancs, les écrans consultés, le passage de l'app en arrière-plan et le
+    retour (écran et épreuve en cours à ce moment-là).</li>
+  <li><b>Les recherches</b> tapées dans le choix du programme (40 caractères maximum ; une
+    recherche qui ressemble à une adresse e-mail n'est pas envoyée). N'y tape pas d'informations
+    personnelles.</li>
+  <li><b>L'écran d'abonnement</b> : son affichage, ce que tu y fais (fermer, regarder une vidéo,
+    tenter un achat) et le résultat d'un achat (réussi ou non, formule choisie). Aucune information
+    de paiement : celles-ci restent chez Apple.</li>
+  <li><b>Scores</b> : pour calculer le percentile « tu bats X % des candidats », le jeu joué, le
+    score et le niveau.</li>
+</ul>
+<p>Ces données servent <b>uniquement</b> à mesurer l'usage, améliorer l'application et calculer les percentiles des scores. Elles ne
+sont <b>ni vendues, ni partagées</b> avec des annonceurs, ni utilisées pour te suivre sur d'autres
+apps ou sites, ni croisées avec les données publicitaires (section 3). Les événements sont
+d'abord gardés sur ton appareil puis envoyés par lots lorsque tu ne joues pas activement, notamment au passage en arrière-plan.</p>
 
 <h2>3. Publicités (version gratuite)</h2>
 <p>La version gratuite peut afficher des publicités via <b>Google AdMob</b>. Sur iOS, la
-personnalisation des annonces n'est activée que si tu l'acceptes via la fenêtre de consentement
-d'Apple (App Tracking Transparency). Si tu refuses, des annonces <b>non personnalisées</b> sont
-affichées. Google peut collecter des identifiants d'appareil et des données d'usage pour la
-diffusion des annonces — voir la
+personnalisation des annonces dépend des choix de consentement Google applicables et de l'autorisation App Tracking Transparency d'Apple. Refuser le suivi empêche l'accès à l'identifiant publicitaire ; des annonces non personnalisées ou limitées peuvent rester disponibles selon tes choix et leur disponibilité. Google peut collecter l'adresse IP (et en déduire une position approximative), des identifiants d'appareil, les annonces vues et interactions, des rapports de plantage, des informations de performance et d'autres diagnostics pour fournir, mesurer et améliorer la publicité — voir la
 <a href="https://policies.google.com/privacy">politique de confidentialité de Google</a>.
 L'abonnement Premium supprime toutes les publicités.</p>
 
 <h2>4. Achats intégrés</h2>
 <p>Les abonnements Premium sont traités par <b>Apple</b> (App Store) et notre prestataire de
-gestion d'abonnements <b>RevenueCat</b>, qui reçoit un reçu d'achat anonyme pour valider
-l'abonnement. Nous ne voyons jamais tes informations bancaires. Voir la
+gestion d'abonnements <b>RevenueCat</b>, qui reçoit un reçu d'achat, les informations de transaction et un identifiant utilisateur aléatoire RevenueCat pour valider l'abonnement. Nous ne transmettons pas notre identifiant statistique Supabase à RevenueCat.
+Nous ne voyons jamais tes informations bancaires. Voir la
 <a href="https://www.revenuecat.com/privacy">politique de confidentialité de RevenueCat</a>.</p>
+
+<p>Google et RevenueCat peuvent traiter des données hors de l'Union européenne, notamment aux États-Unis. Leurs politiques de confidentialité précisent les durées de conservation, les transferts internationaux et les garanties applicables. Les requêtes réseau exposent également ton adresse IP au prestataire ; nos événements statistiques et scores ne l'enregistrent pas comme champ statistique.</p>
 
 <h2>5. Notifications</h2>
 <p>Le rappel quotidien est une notification <b>locale</b>, programmée sur ton appareil ; aucune
@@ -55,25 +74,23 @@ donnée ne quitte l'appareil pour cela. Tu peux la désactiver dans les Réglage
 
 <h2>6. Base légale, conservation et tes droits (RGPD)</h2>
 <p><b>Base légale :</b> l'exécution du contrat pour l'abonnement Premium (art. 6.1.b RGPD), ton
-consentement pour les publicités personnalisées (fenêtre ATT d'Apple), et notre intérêt légitime
-pour les scores et événements anonymes servant au classement et à l'amélioration de l'app
-(art. 6.1.f).</p>
+consentement lorsqu'il est requis pour la publicité et le suivi (choix Google et autorisation ATT d'Apple), et notre intérêt légitime
+à mesurer l'usage de l'app pour l'améliorer et à calculer le percentile (art. 6.1.f).</p>
 <p><b>Conservation :</b> les données locales restent sur ton appareil tant que l'app est
-installée. Les scores et événements anonymes sont conservés au maximum 24 mois, puis supprimés
-ou agrégés.</p>
-<p><b>Tes droits :</b> les données locales sont sous ton contrôle (supprimer l'app les efface).
-Les scores et événements envoyés sont rattachés à un identifiant aléatoire qui n'est pas relié à
-ton identité et n'est affiché nulle part — nous ne pouvons donc pas retrouver « tes » données ni
-les relier à toi. Pour toute question ou demande (accès, suppression), écris-nous à
-<b>aminekara01@gmail.com</b>. Tu peux aussi introduire une réclamation auprès de la
-<a href="https://www.cnil.fr">CNIL</a>.</p>
+installée. Les événements d'usage détaillés sont supprimés au bout de <b>60 jours</b> ; seules des
+statistiques agrégées, qui ne permettent pas de remonter à un appareil, sont conservées au-delà.
+Les scores servant au percentile sont conservés 90 jours.</p>
+<p><b>Tes droits :</b> tu disposes des droits d'accès, de rectification, d'effacement,
+d'opposition et de limitation. Les statistiques sont rattachées à un identifiant aléatoire d'installation plutôt qu'à ton nom. Pour toute demande, écris-nous à
+<b>brainpreflight@gmail.com</b> et nous t'indiquerons comment la traiter. Tu peux aussi introduire
+une réclamation auprès de la <a href="https://www.cnil.fr">CNIL</a>.</p>
 
 <h2>7. Enfants</h2>
-<p>L'application s'adresse aux candidats aux sélections cadet-pilote (généralement 16 ans et plus)
-et ne collecte pas sciemment de données d'enfants de moins de 13 ans.</p>
+<p>L'application s'adresse aux candidats aux sélections (généralement 16 ans et plus) et ne
+collecte pas sciemment de données d'enfants de moins de 13 ans.</p>
 
 <h2>8. Modifications</h2>
-<p>Cette politique peut évoluer avec l'application (par ex. ajout du classement en ligne). La date
-de mise à jour en haut de page fait foi.</p>
+<p>Cette politique peut évoluer avec l'application. La date de mise à jour en haut de page fait
+foi.</p>
 </body>
 </html>
